@@ -6,6 +6,7 @@
 - ✨ Dark/Light theme
 - ✨ Frontend side routing
 - ✨ Image aspect ratio (4:3)
+- ✨ Use localStorage for theme saveing mode
 
 ## Project setup
 
