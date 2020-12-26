@@ -90,18 +90,12 @@ export default {
   computed: {
     ...mapGetters(["countries"]),
     filteredCountries() {
-      function compare(a, b) {
-        if (a.name < b.name) return -1;
-        if (a.name > b.name) return 1;
-        return 0;
-      }
-      let filterCountries = this.countries.filter((x) => {
+      return this.countries.filter((x) => {
         return (
-          x.name.toLowerCase().indexOf(this.keywords.toLowerCase()) > -1 &&
+          x.name.toLowerCase().match(this.keywords.toLowerCase()) &&
           x.region.match(this.region)
         );
       });
-      return filterCountries.sort(compare);
     },
   },
   created() {
