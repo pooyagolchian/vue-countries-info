@@ -1,6 +1,11 @@
 # coutries-info-challenge
 
-- Demo page is here => ✅ 🚀 [Demo link on Netlify](https://eager-fermat-1a2cc5.netlify.app/)
+- Demo page is here => ✅ 🚀 [ Demo link ](https://eager-fermat-1a2cc5.netlify.app/)
+- ✨ Vuetify framework
+- ✨ Vuex and API factory design pattern
+- ✨ Dark/Light theme
+- ✨ Frontend side routing
+- ✨ Image aspect ratio (4:3)
 
 ## Project setup
 
