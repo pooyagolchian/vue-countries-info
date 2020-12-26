@@ -79,7 +79,9 @@ export default {
     ...mapGetters(["countries"]),
     countryData() {
       return this.countries.filter((x) => {
-        return x.name.toLowerCase().match(this.countryName.toLowerCase());
+        return x.name
+          .replace(/\s\([\w\s\.]+\)/gi, "")
+          .match(this.countryName.replace(/\s\([\w\s\.]+\)/gi, ""));
       });
     },
 
